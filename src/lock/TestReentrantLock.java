@@ -1,9 +1,4 @@
 package lock;
-
-import org.junit.Test;
-
-import java.util.Optional;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.IntStream;
 
