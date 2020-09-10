@@ -67,11 +67,11 @@ public class AtomicIntegerTest {
 //        System.out.println(value);
 
 
-        final AtomicInteger value = new AtomicInteger();
+        final AtomicInteger value = new AtomicInteger();//默认为0
         Thread t1 = new Thread() {
             @Override
             public void run() {
-                int x = 0;
+                int x = 0;//内存局部变量
                 while ( x < 500){
                     int v = value.getAndIncrement();//先得到再增加,原子操作
                     System.out.println(Thread.currentThread().getName()+":"+v);
