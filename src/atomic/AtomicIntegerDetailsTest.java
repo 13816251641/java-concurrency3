@@ -62,6 +62,16 @@ public class AtomicIntegerDetailsTest {
         }).start();
     }
 
+    /**
+     *
+     */
+    @Test
+    public void test(){
+        AtomicInteger i = new AtomicInteger(10);
+        boolean b = i.compareAndSet(15, 20);
+        System.out.println(b);
+        System.out.println(i.get());
+    }
 
 
 
