@@ -6,8 +6,7 @@ public class JITTest {
 
     public static void main(String[] args) throws Exception {
         /*
-            如下线程会一直执行程序,即使init=false
-            解决方法是将init设置为volatile
+            如下线程会一直执行程序,即使init=false解决方法是将init设置为volatile
          */
         new Thread(()->{
             while(!init){
@@ -25,8 +24,5 @@ public class JITTest {
             init = true;
             System.out.println("Set init to true");
         }).start();
-
     }
-
-
 }

@@ -24,7 +24,7 @@ public class Test {
         Thread.sleep(500);
 
         new Thread(()->{
-            i = i + 1;
+            i = i + 1;//3
         }).start();
     }
 }

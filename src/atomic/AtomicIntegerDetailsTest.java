@@ -10,9 +10,9 @@ public class AtomicIntegerDetailsTest {
          * create
          */
         AtomicInteger i = new AtomicInteger();
-        System.out.println(i.get());
+        System.out.println(i.get());//0
         i = new AtomicInteger(10);
-        System.out.println(i.get());
+        System.out.println(i.get());//10
 
         System.out.println("-----------------------------------");
 
@@ -20,7 +20,7 @@ public class AtomicIntegerDetailsTest {
          * set
          */
         i.set(12);
-        System.out.println(i.get());
+        System.out.println(i.get());//12
 
         System.out.println("-----------------------------------");
 
