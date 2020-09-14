@@ -5,7 +5,7 @@ public class AtomicIntegerDetailsTest2 {
     private static final CompareAndSetLock lock = new CompareAndSetLock();
 
     public static void main(String[] args) {
-        for(int i = 0; i < 2;i++){
+        for(int i = 0; i < 5;i++){
             new Thread(){
                 @Override
                 public void run() {
