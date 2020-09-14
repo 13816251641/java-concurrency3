@@ -1,4 +1,4 @@
-package atomic;
+package atomic.use.atomicinteger;
 
 public class GetLockException extends Exception {
 

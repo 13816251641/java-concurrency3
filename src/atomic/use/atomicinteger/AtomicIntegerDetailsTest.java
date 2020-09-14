@@ -1,4 +1,4 @@
-package atomic;
+package atomic.use.atomicinteger;
 
 import org.junit.Test;
 
