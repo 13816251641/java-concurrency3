@@ -6,7 +6,6 @@ public class Test {
 
     private volatile static int i = 1;
 
-
     public static void main(String[] args) throws Exception {
 
         AtomicInteger a = new AtomicInteger(1);

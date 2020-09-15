@@ -9,7 +9,11 @@ public class CompareAndSetLock {
     private Thread lockedThread;
 
     public void tryLock() throws GetLockException {
-        boolean success = value.compareAndSet(0, 1);//原子性,unsafe里面有锁,cpu级别的锁性能高
+        /*
+          原子性操作,unsafe里面有锁,cpu级别的锁性能高
+          快速失败,不会阻塞线程
+         */
+        boolean success = value.compareAndSet(0, 1);
         if(!success)
             throw new GetLockException("Get the Lock failed");
         else{
